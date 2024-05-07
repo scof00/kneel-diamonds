@@ -1,0 +1,26 @@
+.choices{
+    display: flex;
+    flex-direction: row;
+}
+article.choices{
+    margin-bottom: 20px
+}
+
+section{
+    margin: 20px;
+    border: 2px dotted blue;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.order{
+    margin-left: 5%;
+}
+
+button{
+    background-color: rgb(233, 35, 35);
+    color: white;
+    border-radius: 8px;
+    border: 3px outset rgb(105, 24, 24);
+    height: 35px;
+}
