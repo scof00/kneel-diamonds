@@ -12,7 +12,7 @@ export const MetalOptions = async () => {
     document.addEventListener("change", handleMetalChoice)
 
     let metalChoicesHTML =`<h3>Choose your Metal:</h3>`
-    const divStringArray = metals.map(
+    const divStringArray = await metals.map(
         (metal) => {
             return `<div>
             <input type='radio' name='metal' value='${metal.id}' /> ${metal.metal}
