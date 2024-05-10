@@ -1,6 +1,7 @@
 import { MetalOptions } from './MetalOptions.js'
 import { SizeOptions } from './SizeOptions.js'
 import { StyleOptions } from './StyleOptions.js'
+import { jewelryOptions } from './jewelryOptions.js'
 import { Orders, PlaceOrder } from './order.js'
 
 
@@ -11,6 +12,7 @@ const render = async () => {
     const styleOptionsHTML = await StyleOptions()
     const sizeOptionsHTML = await SizeOptions()
     const ordersHTML = await Orders()
+    const jewelryOptionsHTML = await jewelryOptions()
 
     const composedHTML = `
         <h1>Kneel Diamonds</h1>
@@ -29,6 +31,10 @@ const render = async () => {
             <section class="choices__styles options">
                 <h2>Styles</h2>
                 ${styleOptionsHTML}
+            </section>
+            <section class="choices__jewelry options">
+                <h2>Jewelry</h2>
+                ${jewelryOptionsHTML}
             </section>
         </article>
 

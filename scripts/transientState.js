@@ -1,7 +1,8 @@
 const transientState = {
     "metalId": 0,
     "styleId": 0,
-    "sizeId": 0
+    "sizeId": 0,
+    "typeId": 0
 }
 
 export const setMetalChoice = (chosenMetal) => {
@@ -14,6 +15,10 @@ export const setStyleChoice = (chosenStyle) => {
 
 export const setSizeChoice = (chosenSize) => {
     transientState.sizeId = chosenSize
+}
+
+export const setJewelryChoice = (chosenJewelry) => {
+    transientState.typeId= chosenJewelry
 }
 
 export const placeOrder = async () => {
